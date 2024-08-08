@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": [],
+        "item": {
+          "items": [
+            "minecraft:bowl"
+          ]
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"override\"]}"
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:mooshroom",
+              "type_specific": {
+                "type": "mooshroom",
+                "variant": "brown"
+              },
+              "nbt": "{CustomName:'\"Bartender\"'}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "bottleblock:bartender_functions/flowered_bowl_interaction"
+  }
+}

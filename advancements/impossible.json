@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "empty": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "bottleblock:debug/basic_read"
+    }
+  }
+  
